@@ -52,4 +52,5 @@ public class DonHang {
     })
     @JoinColumn(name = "ma_hinh_thuc_thanh_toan",nullable = false)
     private HinhThucThanhToan hinhThucThanhToan;
+
 }
