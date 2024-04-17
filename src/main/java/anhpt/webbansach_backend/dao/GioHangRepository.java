@@ -3,9 +3,10 @@ package anhpt.webbansach_backend.dao;
 import anhpt.webbansach_backend.entity.DonHang;
 import anhpt.webbansach_backend.entity.GioHang;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import org.springframework.stereotype.Repository;
 
-@Repository
+@RepositoryRestResource(path = "gio-hang")
 public interface GioHangRepository extends JpaRepository<GioHang,Integer> {
 
 }
