@@ -15,5 +15,5 @@ public interface SachRepository extends JpaRepository<Sach,Integer> {
 
     Page<Sach> findByDanhSachTheLoai_MaTheLoai(@RequestParam("maTheLoai") int maTheLoai,Pageable pageable);
 
-    Page<Sach> findByTenSachContainingANDDanhSachTheLoai_MaTheLoai(@RequestParam("tenSach") String tenSach,@RequestParam("maTheLoai") int maTheLoai,Pageable pageable);
+    Page<Sach> findByTenSachContainingAndDanhSachTheLoai_MaTheLoai(@RequestParam("tenSach") String tenSach,@RequestParam("maTheLoai") int maTheLoai,Pageable pageable);
 }
